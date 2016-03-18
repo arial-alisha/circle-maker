@@ -1,7 +1,12 @@
-var $ball = $('.ball');
-var $div = $('<div>');
+var $body = $('body');
 
-$('html').on('keydown', function (e) {
-  body.append(div);
-  console.log(e.keyCode);
+$('html').on('keydown', function () {
+  var $ball = $('<div>');
+  var newLeft = Math.random() * 4000;
+  var newTop = Math.random() * 1000;
+
+  $body.append($ball);
+  $ball.css('left', newLeft);
+  $ball.addClass('ball');
+  $ball.css('top', newTop);
 });
